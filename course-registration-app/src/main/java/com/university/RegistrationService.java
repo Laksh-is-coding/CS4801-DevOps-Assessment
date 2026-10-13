@@ -1,5 +1,7 @@
 package com.university;
 
+
+
 public class RegistrationService {
 
     private static final int MAX_CREDITS = 20;
@@ -10,7 +12,7 @@ public class RegistrationService {
             return false;
         }
 
-        if (course.getCurrentEnrollment() > course.getCapacity()) {
+        if (course.getCurrentEnrollment() >= course.getCapacity()) {
             return false;
         }
 
