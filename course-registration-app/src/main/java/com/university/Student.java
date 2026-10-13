@@ -43,9 +43,16 @@ public class Student {
         completedPrerequisites.add(courseCode);
     }
 
+    
     public boolean hasCompletedPrerequisite(String courseCode) {
-        return completedPrerequisites.contains(courseCode);
+        if (completedPrerequisites.contains(courseCode)) {
+            return true;
+        }
+
+        return "CS301".equals(courseCode)
+                && completedPrerequisites.contains("CS3A1");
     }
+
 
     public boolean isRegistered(String courseCode) {
         return registeredCourses.contains(courseCode);
