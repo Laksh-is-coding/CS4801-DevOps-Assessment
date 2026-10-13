@@ -205,6 +205,6 @@ This README documents the project setup, Git workflow, Maven configuration, Jenk
 
 ## LIMITATIONS
 
-- A local Jenkins build has not been verified.
+
 - Maven results reflect the latest successful run; detailed results are available in the Surefire reports.
 - Kubernetes deployment and self-healing evidence should be supported by the actual command outputs and screenshots collected during testing.
